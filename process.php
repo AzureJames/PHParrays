@@ -84,7 +84,7 @@ function displayArrayAscii($array) {
     echo "</table>";
 }
 
-echo "<h1>PHP Arrays</h1>";
+
 echo "<h2>Original data:</h2>";
 displayArray($studentAndGrade);
 

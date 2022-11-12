@@ -11,7 +11,7 @@
 			  crossorigin="anonymous"></script>
 </head>
 <body>
-
+<h1>PHP Arrays</h1>
 <form action="#" method="get" id="#arrayForm">
     <label for="student">Student</label>
     <input type="text" name="student" id="student">
@@ -31,8 +31,9 @@
 
 if(!isset($studentAndGrade)){$studentAndGrade = [];}
 
-extract($_GET);
-include "validate.php";
+if(isset($_GET['student']) && isset($_GET['grade'])){
+    extract($_GET);
+    include "validate.php"; }
 isset($formGood) && $formGood === true ?
 include "process.php" : "";
 ?>
